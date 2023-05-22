@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 :root{
 	--height: 80px;
 	--back: #15171e:
@@ -9,47 +16,73 @@
     list-style-type: none;
     outline: none;
     border: none;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: SF Pro Display;
     font-weight: 500;
     letter-spacing: 1px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
     height: max-content;
-    align-content: flex-start;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
     font-size: 16px;
+    -webkit-transition: all 0.125s ease;
+    -o-transition: all 0.125s ease;
     transition: all 0.125s ease;
     color: #000;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 .container{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	box-shadow: 0 0 5px 5px #00000010;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-shadow: 0 0 5px 5px #00000010;
+	        box-shadow: 0 0 5px 5px #00000010;
 }
 .header{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	max-width: 1200px;
 	margin: auto;
 	width: 100%;
 	height: var(--height);
 	background: #fff;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	gap: 20px;
 	padding: 0 20px;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	overflow: hidden;
 }
 .logo{
 	width: var(--height);
 }
 .menu{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	gap: 20px;
 }
 .menu-link{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	position: relative;
 	height: var(--height);
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding: 0 20px;
 	opacity: 0.5;
 }
@@ -63,6 +96,8 @@
 	height: 3px;
 	margin-bottom: -3px;
 	background: #000;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
     transition: all 0.25s ease;
     opacity: 0;
 }
@@ -76,14 +111,22 @@
 	opacity: 1;
 }
 .header-button{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	gap: 20px;
 }
 .region{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	height: var(--height);
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	gap: 5px;
 
 }
@@ -94,16 +137,24 @@
 	width: 20px;
 }
 .region:active .region-ico {
-	transform: scale(1.4);
+	-webkit-transform: scale(1.4);
+	    -ms-transform: scale(1.4);
+	        transform: scale(1.4);
 }
 .region-city:active .region-ico{
-	transform: scale(1.4);
+	-webkit-transform: scale(1.4);
+	    -ms-transform: scale(1.4);
+	        transform: scale(1.4);
 }
 .region-display{
 	display: none;
 	position: absolute;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	left: 0;
 	bottom: 0;
 	height: 100vh;
@@ -127,6 +178,8 @@
 	padding: 10px 20px;
 }
 .region-city{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	gap: 5px;
 	padding: 10px 20px;
@@ -143,7 +196,9 @@
 	border: 2px solid #000;
 	border-radius: 5px;
 	padding: 15px;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .region-close:hover{
 	background: #000;
@@ -152,7 +207,8 @@
 .login{
 	background: #00a9e4;
 	color: #fff;
-	align-content: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
 	padding: 10px 20px;
 	border-radius: 5px;
 	border: 2px solid #00a9e4;
@@ -161,12 +217,20 @@
 	background: none;
 	border: 2px solid #00a9e4;
 	color: #00a9e4;
+
+
 }
 .login-display{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	position: absolute;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	left: 0;
 	bottom: 0;
 	height: 100vh;
@@ -183,17 +247,22 @@
 	position: relative;
 }
 .login-logo{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-self: center;
+	-ms-grid-column-align: center;
+	    justify-self: center;
 }
 .login-title{
 	padding: 10px 0;
 	font-size: 20px;
 	color: #fff;
-	justify-self: center;
+	-ms-grid-column-align: center;
+	    justify-self: center;
 
 }
 .login-form{
+	display: -ms-grid;
 	display: grid;
 	gap: 10px;
 	position: relative;
@@ -205,14 +274,23 @@
 	position: relative;
 }
 .login-number-flex{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	align-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
 	gap: 5px;
 }
 .login-format-click{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	gap: 5px;
 	height: 30px;
 	padding: 20px 10px;
@@ -243,9 +321,15 @@
 .login-choice-number a{
 	background: var(--back);
 
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
 	gap: 5px;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	color: #fff;
 	padding: 10px;
 }
@@ -265,13 +349,23 @@
 	padding: 10px 15px;
 	background: #fff;
 	border-radius: 5px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex; 
+	-webkit-box-pack: justify; 
+	    -ms-flex-pack: justify; 
+	        justify-content: space-between; 
+	-webkit-box-align: center; 
+	    -ms-flex-align: center; 
+	        align-items: center;
 }
 .recaptcha-input{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	gap: 10px;
 }
 
@@ -287,27 +381,42 @@
 	width: 40px;
 }
 .login-title-email{
+	display: -ms-grid;
 	display: grid;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	color: #fff;
 	padding: 10px 0;
 	opacity: 0.5;
 	gap: 5px;
 }
 .login-email{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	gap: 10px;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 .login-link{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	gap: 10px;
 	border-radius: 5px;
 	width: 40px;
 	height: 40px;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	background: #fff;
+    -webkit-transition: all 0.125s ease;
+    -o-transition: all 0.125s ease;
     transition: all 0.125s ease;
 
 }
@@ -331,7 +440,11 @@
 	color: #fff;
 	border-radius: 5px;
 	padding: 15px;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+    -webkit-transition: all 0.125s ease;
+    -o-transition: all 0.125s ease;
     transition: all 0.125s ease;
 
 }
@@ -350,8 +463,12 @@
 	color: #fff;
 	border-radius: 5px;
 	padding: 15px;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	background: #ffffff75;
+    -webkit-transition: all 0.125s ease;
+    -o-transition: all 0.125s ease;
     transition: all 0.125s ease;
 
 

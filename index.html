@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" c ontent="IE=edge">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<link rel="icon" href="image/ico/logo.png">
+	<link rel="stylesheet" href="custom.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	
+	
+	<title>Atomy</title>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+
+			<img class="logo" src="image/logo/logo.png">
+
+			<div class="menu">
+				<a class="menu-link" href="#">Product</a>
+				<a class="menu-link" href="#">About</a>
+				<a class="menu-link" href="#">Contact</a>
+				<a class="menu-link" href="#">FAQ</a>
+			</div>
+
+			<div class="header-button">
+				<a href="#" class="region">
+					<img class="region-ico" src="image/ico/gps.png">
+					<div class="region-selected"></div>
+				</a>
+				
+				<a href="#" class="login">
+					LOGIN
+				</a>
+			</div>
+			
+		</div>
+		
+	</div>
+	<div class="login-display">
+		<div class="login-container">
+			<img class="logo login-logo" src="image/logo/logo non fond.png">
+			<div class="login-title">
+				Войти
+			</div>
+			
+			<form class="login-form">
+				<div class="login-number">
+					<div class="login-number-flex">
+						<a href="#" class="login-format" id="login-format">
+							<div class="login-format-click">
+								<img class="login-flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Kazakhstan.svg/375px-Flag_of_Kazakhstan.svg.png" alt="">
+								<div class="login-number-main">
+									+7
+								</div>
+							</div>
+							
+						</a>
+						<input class="login-input" type="text" id="phone" required>
+					</div>
+					
+				</div>
+				<div class="login-choice-number">
+					<a href="#" class="login-choice-phone login-choice-kz">
+						<img class="login-flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Flag_of_Kazakhstan.svg/375px-Flag_of_Kazakhstan.svg.png" alt="">
+						<div class="login-number-main">
+							+7
+						</div>
+					</a href="#">
+					<a href="#" class="login-choice-phone login-choice-uk">
+						<img class="login-flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Flag_of_Ukraine.svg/375px-Flag_of_Ukraine.svg.png" alt="">
+						<div class="login-number-main">
+							+380
+						</div>
+					</a href="#">
+					<a href="#" class="login-choice-phone login-choice-ru">
+						<img class="login-flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/375px-Flag_of_Russia.svg.png" alt="">
+						<div class="login-number-main">
+							+7
+						</div>
+					</a href="#">
+				</div>
+				<div class="recaptcha-container">
+					<div class="recaptcha-input">
+						<input class="recaptcha-check" type="checkbox">
+						<div class="recaptcha-title">Я не робот</div>
+					</div>
+					<img class="recaptcha-ico" src="https://www.google.com/recaptcha/about/images/reCAPTCHA-logo@2x.png" alt="">
+				</div>
+				<input id="login-login" class="login-login" type="submit" value="ПОДТВЕРДИТЬ">
+			</form>
+			<input class="login-reg" type="submit" value="ЗАРЕГИСТРИРОВАТЬСЯ">
+			<div class="login-title-email">
+				Или войти через
+			</div>
+			
+			<div class="login-email">
+				<a class="login-link" href="#">
+					<img class="login-ico" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/706px-Google_%22G%22_Logo.svg.png" alt="">
+				</a>
+				<a class="login-link facebook" href="#">
+					<img class="login-ico" src="image/ico/facebook.png" alt="">
+				</a>
+				<a class="login-link" href="#">
+					<img class="login-ico" src="data:image/png;base64,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" alt="">
+				</a>
+				<a class="login-link" href="#">
+					<img class="login-ico" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/732px-Apple_logo_black.svg.png" alt="">
+				</a>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+	<div class="region-display">
+		<div class="region-container">
+			<div class="region-title">
+				Choice Region
+			</div>
+			<div class="region-choice">
+				<a href="#" class="region-city">
+					<img class="region-ico" src="image/ico/gps black.png">
+					Astana
+				</a href="#">
+				<a href="#" class="region-city">
+					<img class="region-ico" src="image/ico/gps black.png">
+					Karaganda
+				</a href="#">
+				<a href="#" class="region-city">
+					<img class="region-ico" src="image/ico/gps black.png">
+					Shimkent
+				</a href="#">
+				<a href="#" class="region-city">
+					<img class="region-ico" src="image/ico/gps black.png">
+					Almaty
+				</a href="#">
+			</div>
+			
+
+			<a href="#" class="region-close">
+				CLOSE
+			</a>
+		</div>
+	</div>
+	
+	<script src="jquery.js"></script>
+	<script src="main.js"></script>
+	<script src="script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"></script>
+</body>
+</html>

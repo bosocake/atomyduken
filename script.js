@@ -27,6 +27,7 @@ const regionSelected = document.querySelector('.region-selected');
 const loginTitle = document.querySelector('.login');
 const loginLogin = document.querySelector('.login-login');
 const loginDisplay = document.querySelector('.login-display');
+const loginClose = document.querySelector('.login-close');
 
 function BlockRegionDisplay() {
   regionDisplay.style.display = 'flex';
@@ -39,9 +40,9 @@ function NoneRegionDisplay() {
 function BlockLoginDisplay() {
 	loginDisplay.style.display = 'flex';
 }
-// function NoneLoginDisplay() {
-// 	loginDisplay.style.display = 'none';
-// }
+function NoneLoginDisplay() {
+	loginDisplay.style.display = 'none';
+}
 
 regionCity.forEach(function(regionCity) {
 	regionCity.addEventListener('click', NoneRegionDisplay);
@@ -51,7 +52,7 @@ regionClose.addEventListener('click', NoneRegionDisplay);
 
 loginTitle.addEventListener('click', BlockLoginDisplay);
 
-// loginLogin.addEventListener('click', NoneLoginDisplay);
+loginClose.addEventListener('click', NoneLoginDisplay);
 
 region.addEventListener('click', BlockRegionDisplay);
 
